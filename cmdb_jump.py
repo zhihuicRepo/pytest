@@ -6,7 +6,7 @@ __Author__ = "kaiz"
 import os,sys,re,requests
 
 def get_appid():
-  res = requests.get('http://cmdb.quark.com/api/App/getapplist')
+  res = requests.get('http://cmdb.xxxxx.com/api/App/getapplist')
   list_app = res.text.split(",")
   list_app_dst = filter(lambda x:re.search("ApplicationID",x),list_app)
   list_app_dst = map(lambda x:re.search('\d+',x).group(),list_app_dst)
