@@ -25,7 +25,7 @@ def mysqlconn():
 #{u'shardNum': 6, u'status': 1, u'message': u'client is up to date, Cheers!', u'shardInfo': u'172.30.33.236:6387 172.30.33.237:6381 172.30.33.238:6381 172.30.33.239:6381 172.30.33.240:6381 172.30.33.241:6381', u'appId': 33}
 
 def get_request(appType,appId):
-    url = "http://cache.quark.com/cache/client/redis/%s/%s.json?clientVersion=1.0-SNAPSHOT"%(appType,appId)
+    url = "http://cache.xxxx.com/cache/client/redis/%s/%s.json?clientVersion=1.0-SNAPSHOT"%(appType,appId)
     req = urllib2.Request(url)
     try:
         res = urllib2.urlopen(req,timeout=10)
